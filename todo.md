@@ -1,0 +1,28 @@
+- [] set up databse
+    - [x] create get function
+        - [x] get all game
+        - [x] get single game
+        - [X] get all players
+        - [x] get single players
+    - [ ] create post function
+        - [x] create new game
+        - [ ] update single game
+        - [x] insert new user
+        - [ ] update single user
+    - [x] create delete function
+        - [x] delete game
+        - [x] delete user
+    - [ ] validate data with joy 
+
+--------------------------------------
+
+- [] set up the waiting room
+    - [] configure vue js
+    - [] create the right components
+    - [] create input component (text, button)
+    - [] create function for make all the api req
+    - [] create function for menage tw websocket
+    - [] have functional room
+        - [] show room when join the game
+        - [] show the start button only to the game creator 
+        - [] show name of new player in the room of every player
