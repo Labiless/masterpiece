@@ -1,2 +1,2 @@
 # masterpiece
-browser based multiplayer game based on MEVN stack
+browser based multiplayer game
