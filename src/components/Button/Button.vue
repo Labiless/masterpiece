@@ -37,5 +37,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "./style.less";
+@import "./Button.less";
 </style>
