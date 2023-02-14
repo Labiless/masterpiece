@@ -1,0 +1,31 @@
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 1000px;
+    transition: all 0.3s;
+    font-family: @font;
+    text-align: center;
+    display: block;
+    &.v1{
+        background: @gold;
+        border: 1px solid @gold;
+        &:hover{
+            background: transparent;
+        }
+    }
+    &.v2{
+        background: transparent;
+        border: 1px solid @gold;
+        color: @gold;
+    }
+    &.disabled{
+        background: @dark-grey;
+        color: @grey;
+        &:hover{
+            cursor: not-allowed;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
