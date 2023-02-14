@@ -4,6 +4,9 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+// global style
+import "./assets/global.less"
+
 // vue icons
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 import { IoCloseCircleSharp } from "oh-vue-icons/icons";

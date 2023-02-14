@@ -1,32 +1,39 @@
-button{
+button {
     border: none;
     padding: 10px;
     border-radius: 1000px;
     transition: all 0.3s;
-    font-family: @font;
+    font-family: @font-header;
     text-align: center;
     display: block;
     margin: 10px;
-    &.v1{
+
+    &.v1 {
         background: @gold;
         border: 1px solid @gold;
-        &:hover{
+
+        &:hover {
             background: transparent;
         }
     }
-    &.v2{
+
+    &.v2 {
         background: transparent;
         border: 1px solid @gold;
         color: @gold;
     }
-    &.disabled{
+
+    &.disabled {
         background: @dark-grey;
         color: @grey;
-        &:hover{
+
+        &:hover {
             cursor: not-allowed;
         }
     }
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
+
 }

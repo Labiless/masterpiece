@@ -2,26 +2,24 @@ div{
     position: relative;
     width: 300px;
     input{
+        background: transparent;
         padding: 5px 5px;
         margin: 10px;
         width: 100%;
         border: none;
         border-bottom: 1px solid @gold !important;
         color: @gold;
+        font-family: @font-text;
         &:focus{
             border: none;
             outline: none;
         }
     }
     button{
-        position: absolute;
-        border: none;
-        width: fit-content;
-        height: fit-content;
-        background-color: transparent;
-        padding: 0px;
+        .deleteIcon();
         right: -3%;
         top: 50%;
         transform: translateY(-50%) translateX(50%);
+        position: absolute;
     }
 }

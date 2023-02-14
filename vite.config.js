@@ -13,7 +13,9 @@ export default defineConfig({
   },
   define: {
     colors:{
-      gold: "#FFA800"
+      gold: "#FFA800",
+      darkGrey: "#16181B",
+      grey: "#667080"
     }
   },
   css: {
