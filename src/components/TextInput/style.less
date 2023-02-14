@@ -1,0 +1,27 @@
+div{
+    position: relative;
+    width: 300px;
+    input{
+        padding: 5px 5px;
+        margin: 10px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid @gold !important;
+        color: @gold;
+        &:focus{
+            border: none;
+            outline: none;
+        }
+    }
+    button{
+        position: absolute;
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        padding: 0px;
+        right: -3%;
+        top: 50%;
+        transform: translateY(-50%) translateX(50%);
+    }
+}

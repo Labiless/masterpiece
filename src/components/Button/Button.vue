@@ -1,3 +1,7 @@
+<template>
+    <button :class="setType">{{ text }}</button>
+</template>
+
 <script>
 
 export default {
@@ -35,7 +39,3 @@ export default {
 <style scoped lang="less">
 @import "./style.less";
 </style>
-
-<template>
-    <button :class="setType">{{ text }}</button>
-</template>

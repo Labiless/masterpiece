@@ -11,6 +11,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  define: {
+    colors:{
+      gold: "#FFA800"
+    }
+  },
   css: {
     preprocessorOptions: {
       less: {
