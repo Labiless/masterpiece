@@ -3,19 +3,20 @@ import Button from "../components/Button/Button.vue"
 import TextInput from "../components/TextInput/TextInput.vue"
 import Toast from "../components/Toast/Toast.vue"
 import IconButton from "../components/IconButton/IconButton.vue";
+import TimeBar from "../components/TimeBar/TimeBar.vue";
 </script>
 
 <script>
 export default {
   data() {
     return {
-      showToast: true,
+      showToast: false,
       toastText: "ciao sono un toast"
     }
   },
   methods: {
     buttonClick() {
-      this.toastText = ["test 1", "un nuovo test", "ancora il nuovo testo!"][Math.trunc(Math.random()*3)]
+      this.toastText = "start timer"
       this.showToast = !this.showToast;
     },
     iconClick(){
@@ -24,7 +25,12 @@ export default {
     handleInput(input) {
       console.log(input)
     },
-
+    timerEnd(){
+      console.log("timer ended")
+    }
+  },
+  mounted(){
+    console.log(this.showToast);
   }
 }
 </script>
@@ -36,4 +42,5 @@ export default {
   <IconButton @click="iconClick" icon="IoShareSocialSharp"/>
   <IconButton icon="IoQrCodeSharp"/>
   <IconButton icon="IoCopySharp"/>
+  <TimeBar maxTime="10" v-on:timerEnd="timerEnd" :isStart=showToast />
 </template>

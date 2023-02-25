@@ -27,7 +27,7 @@ export default {
     },
     data() {
         return {
-            showToast: true,
+            showToast: this.show,
             iconColor: colors.grey,
         }
     },

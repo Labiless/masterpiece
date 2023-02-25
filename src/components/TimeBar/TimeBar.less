@@ -1,0 +1,17 @@
+div {
+    width: 100%;
+    border-radius: 100px;
+    &.external {
+        height: 3px;
+        margin: 10px auto;
+        background-color: @grey;
+        .internal {
+            width: 100%;
+            background-color: @gold;
+            height: 100%;
+            &.animate{
+                width: 0%;
+            }
+        }
+    }
+}
