@@ -9,8 +9,10 @@ import "./assets/global.less"
 
 // vue icons
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { IoCloseCircleSharp } from "oh-vue-icons/icons";
-addIcons(IoCloseCircleSharp);
+import * as IoIcons from "oh-vue-icons/icons/io";
+
+const Io = Object.values({ ...IoIcons });
+addIcons(...Io);
 
 //init app
 const app = createApp(App)

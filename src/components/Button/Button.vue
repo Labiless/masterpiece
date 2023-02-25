@@ -10,9 +10,6 @@ export default {
         type: {
             type: Number,
             default: 1
-        },
-        onclick : {
-            default: null
         }
     },
     computed: {
